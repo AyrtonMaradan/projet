@@ -46,3 +46,8 @@ def traitementupdate(request, id):
         return HttpResponseRedirect('/projet/')
     else:
         return render(request, 'projet/update.html', {"form": lform, "id": id})
+
+def delete(request, id):
+    Inscription = models.Inscription.objects.get(pk=id)
+    Inscription.delete()
+    return HttpResponseRedirect('/projet/')

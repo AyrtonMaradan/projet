@@ -7,5 +7,7 @@ urlpatterns = [
     path('confirmation/', views.confirmation),
     path('read/<int:id>/',views.read),
     path('update/<int:id>/',views.update),
-    path('traitementupdate/<int:id>/',views.traitementupdate)
+    path('traitementupdate/<int:id>/',views.traitementupdate),
+    path('delete/<int:id>/' ,views.delete)
+
 ]
