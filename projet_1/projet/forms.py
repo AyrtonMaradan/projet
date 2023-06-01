@@ -1,6 +1,7 @@
 from django.forms import ModelForm
 from django.utils.translation import gettext_lazy as _
 from . import models
+
 class InscriptionForm(ModelForm):
     class Meta:
         model = models.Inscription
@@ -9,5 +10,14 @@ class InscriptionForm(ModelForm):
         'nom' : _('nom'),
         'prenom' : _('prenom') ,
         'age' : _('age'),
-        'telephone' : _('telephone')
+        'telephone' : _('telephone'),
+        'parc' : _('parc')
+        }
+
+class PArcForm(ModelForm):
+    class Meta:
+        model = models.Parc
+        fields = ('parc')
+        labels = {
+        'parc' : _('parc')
         }
