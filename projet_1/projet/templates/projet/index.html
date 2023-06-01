@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+{% load static %}
+<meta charset="UTF-8">
+<title>index</title>
+</head>
+<body>
+<a href="/projet/create/"> acheter un billet</a>
+    <ol>
+        {% for l in liste %}
+            <li>
+                {{l}}
+                <a href="/projet/read/{{l.id}}/"> affiche </a>
+                <a href="/projet/update/{{l.id}}/"> mise à jour </a>
+            </li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
