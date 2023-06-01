@@ -4,7 +4,7 @@ from . import models
 class InscriptionForm(ModelForm):
     class Meta:
         model = models.Inscription
-        fields = ('nom', 'prenom', 'age', 'telephone')
+        fields = ('nom', 'prenom', 'age', 'telephone','parc')
         labels = {
         'nom' : _('nom'),
         'prenom' : _('prenom') ,
