@@ -7,7 +7,7 @@ class Parc(models.Model):
     nom = models.CharField(max_length=100)
 
     def __str__(self):
-        chain = f"{self.nom} à été ajouter à la BDD"
+        chain = f"{self.nom} "
         return chain
 
     def dico(self):
@@ -25,6 +25,6 @@ class Inscription(models.Model):
         return chain
 
     def dico(self):
-        return {"nom":self.nom, "auteur":self.prenom,"age":self.age, "telephone":self.telephone, "Parc": self.Parc}
+        return {"nom":self.nom, "prenom":self.prenom,"age":self.age, "telephone":self.telephone, "parc": self.parc}
 
 

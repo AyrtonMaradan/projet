@@ -18,7 +18,7 @@ def confirmation(request):
 
 def create(request):
     if request.method == "POST":
-        form = InscriptionForm(request)
+        form = InscriptionForm(request.Post)
         if form.is_valid():
             Inscription = form.save()
             return render(request,'projet/confirmation.html',{"Insrciption" : Inscription})

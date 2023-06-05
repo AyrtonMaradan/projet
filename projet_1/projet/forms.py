@@ -7,12 +7,13 @@ from django import forms
 class InscriptionForm(ModelForm):
     class Meta:
         model = models.Inscription
-        fields = ('nom', 'prenom', 'age', 'telephone')
+        fields = ('nom', 'prenom', 'age', 'telephone','parc')
         labels = {
         'nom' : _('nom'),
-        'prenom' : _('prenom') ,
+        'prenom' : _('prenom'),
         'age' : _('age'),
         'telephone' : _('telephone'),
+        'parc' : _('parc'),
         }
 
 class ParcForm(ModelForm):

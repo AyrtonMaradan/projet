@@ -5,10 +5,10 @@
 <title>Title</title>
 </head>
     <body>
-        {% if id != '' %}
-            <form method="post" action="/parc/traitementupdateparc/{{id}}/">
+        {% if id is not None %}
+            <form method="post" action="/projet/parc/traitementupdateparc/{{id}}/">
         {% else %}
-            <form method="post" action="/parc/confirmationparc/">
+            <form method="post" action="/projet/parc/confirmationparc/">
         {% endif %}
         {% csrf_token %}
         {{ form.as_ul }} <!-- permet d'afficher tous les champs sous forme d'une liste

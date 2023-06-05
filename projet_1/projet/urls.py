@@ -12,7 +12,7 @@ urlpatterns = [
 
     #categorie Parc :
     path('parc/createparc/', views.createparc),
-    path('par/confirmationparc/', views.confirmationparc),
+    path('parc/confirmationparc/', views.confirmationparc),
     path('parc/readparc/<int:id>/', views.readparc),
     path('parc/updateparc/<int:id>/', views.updateparc),
     path('traitementupdateparc/<int:id>/', views.traitementupdateparc),
