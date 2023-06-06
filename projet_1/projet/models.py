@@ -7,7 +7,7 @@ class Parc(models.Model):
     nom = models.CharField(max_length=100)
 
     def __str__(self):
-        chain = f"{self.nom} "
+        chain = f"{self.nom} fait partis de la liste des parcs."
         return chain
 
     def dico(self):

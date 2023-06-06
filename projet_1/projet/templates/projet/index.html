@@ -7,7 +7,6 @@
 </head>
 <body>
 <a href="/projet/create/"> acheter un billet</a>
-<a href="/projet/parc/createparc/"> Ajouter un Parc au site </a>
     <ol>
         {% for l in liste %}
             <li>
@@ -15,6 +14,18 @@
                 <a href="/projet/read/{{l.id}}/"> affiche </a>
                 <a href="/projet/update/{{l.id}}/"> mise à jour </a>
                 <a href="/projet/delete/{{l.id}}/"> supprimer </a>
+            </li>
+        {% endfor %}
+    </ol>
+
+<a href="/projet/parc/createparc/"> Ajouter un Parc au site </a>
+     <ol>
+        {% for l in liste2 %}
+            <li>
+                {{l}}
+                <a href="parc/readparc/{{l.id}}/"> affiche </a>
+                <a href="parc/updateparc/{{l.id}}/"> mise à jour </a>
+                <a href="parc/deleteparc/{{l.id}}/"> supprimer </a>
             </li>
         {% endfor %}
     </ol>

@@ -15,7 +15,7 @@ urlpatterns = [
     path('parc/confirmationparc/', views.confirmationparc),
     path('parc/readparc/<int:id>/', views.readparc),
     path('parc/updateparc/<int:id>/', views.updateparc),
-    path('traitementupdateparc/<int:id>/', views.traitementupdateparc),
-    path('deleteparc/<int:id>/', views.deleteparc)
+    path('parc/traitementupdateparc/<int:id>/', views.traitementupdateparc),
+    path('parc/deleteparc/<int:id>/', views.deleteparc)
 
 ]

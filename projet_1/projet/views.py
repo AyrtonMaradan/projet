@@ -5,7 +5,8 @@ from . import models
 
 def index(request):
     liste = models.Inscription.objects.all()
-    return render(request, 'projet/index.html', {"liste":liste})
+    liste2= models.Parc.objects.all()
+    return render(request, 'projet/index.html', {"liste":liste,"liste2":liste2})
 
 
 def confirmation(request):
