@@ -7,13 +7,14 @@ from django import forms
 class InscriptionForm(ModelForm):
     class Meta:
         model = models.Inscription
-        fields = ('nom', 'prenom', 'age', 'telephone','parc')
+        fields = ('nom', 'prenom', 'date_de_naissance', 'telephone','parc','accompagné')
         labels = {
         'nom' : _('nom'),
         'prenom' : _('prenom'),
-        'age' : _('age'),
+        'date_de_naissance' : _('date_de_naissance'),
         'telephone' : _('telephone'),
         'parc' : _('parc'),
+        'accompagné': _('accompagné'),
         }
 
 class ParcForm(ModelForm):
